@@ -1,4 +1,4 @@
-import { Avatar, ThemeProvider, Tooltip } from "@mui/material";
+import { Tooltip } from "@mui/material";
 import React from "react";
 import { SocialNetworks } from "../data/social";
 
@@ -17,6 +17,7 @@ const Social = () => {
                 : r?.url
             }
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src={r?.image}
