@@ -6,7 +6,7 @@ import dp from "../assets/images/profilepic.jpg";
 const Home = () => {
   return (
     <Container>
-      <div className="row" style={{ height: "90vh" }}>
+      <div className="row" style={{ height: "max-content" }}>
         <div className="col-12 col-md-4 pt-4">
           <Avatar
             src={dp}
