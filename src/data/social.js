@@ -1,8 +1,8 @@
-import linkedin from "../assets/images/linkedin.svg";
-import instagram from "../assets/images/instagram.svg";
-import facebook from "../assets/images/facebook.svg";
-import gmail from "../assets/images/gmail.svg";
-import whatsapp from "../assets/images/whatsapp.svg";
+import linkedin from "../assets/images/icons/social/linkedin.ico";
+import instagram from "../assets/images/icons/social/instagram.ico";
+import facebook from "../assets/images/icons/social/facebook.ico";
+import gmail from "../assets/images/icons/social/gmail.ico";
+import whatsapp from "../assets/images/icons/social/whatsapp.ico";
 
 export const SocialNetworks = [
   {

@@ -8,7 +8,12 @@ const TechStack = () => {
     <div className="d-flex">
       {Stack?.map((r, i) => (
         <Tooltip key={i} title={r?.alt}>
-          <Avatar src={r?.image} alt={r?.alt} className="me-1" />
+          <Avatar
+            src={r?.image}
+            alt={r?.alt}
+            className="me-1"
+            sx={{ height: 30, width: 30 }}
+          />
         </Tooltip>
       ))}
     </div>

@@ -3,17 +3,20 @@ import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import { AppRoutes } from "./routes";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-info">
       <Router>
         <Nav />
-        <Routes>
-          {AppRoutes?.map((r, i) => (
-            <Route key={i} path={r?.path} element={r?.component} />
-          ))}
-        </Routes>
+        <React.Suspense fallback="loading...">
+          <Routes>
+            {AppRoutes?.map((r, i) => (
+              <Route key={i} path={r?.path} element={r?.component} />
+            ))}
+          </Routes>
+        </React.Suspense>
       </Router>
       <Footer />
     </div>
