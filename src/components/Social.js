@@ -5,7 +5,9 @@ import { SocialNetworks } from "../data/social";
 const Social = () => {
   return (
     <div className="d-flex">
-      <p className="text-nowrap m-auto me-3">React out to me @ </p>
+      <p className="text-nowrap d-none d-md-block m-auto me-3">
+        React out to me @{" "}
+      </p>
       {SocialNetworks?.map((r, i) => (
         <Tooltip key={i} title={r?.alt}>
           <a
