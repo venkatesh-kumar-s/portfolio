@@ -1,8 +1,19 @@
-import { Avatar, Button, ButtonGroup, Tooltip } from "@mui/material";
+import {
+  Avatar,
+  Badge,
+  Button,
+  ButtonGroup,
+  Chip,
+  Tooltip,
+} from "@mui/material";
 import React from "react";
 import { Card, Container, Table } from "react-bootstrap";
 import { useTitle } from "../components/customHooks/title";
-import { Stats } from "../data/stats";
+import Search from "../components/Search";
+import Statistics from "../components/Statistics";
+
+//static data
+import { ProjectsList } from "../data/projects";
 
 const Projects = () => {
   useTitle("Projects");
@@ -13,36 +24,62 @@ const Projects = () => {
     >
       <Container>
         <div className="my-4 row">
+          {/* search bar */}
           <div className="col-12 col-md-4">
-            <input
-              className="form-control shadow-sm"
-              placeholder="Search using project name, type, domain ..."
-            />
+            <Search placeholder="Search using project name, type, domain ..." />
           </div>
+
+          {/* projects count */}
           <div className="col-12 col-md-8 d-flex justify-content-end">
-            <ButtonGroup
-              className="bg-light shadow-sm"
-              aria-label="outlined primary button group"
-            >
-              {Stats?.map((r, i) => (
-                <Tooltip key={i} title={r?.alt}>
-                  <Button>
-                    <img
-                      src={r?.icon}
-                      alt={r?.alt}
-                      style={{
-                        objectFit: "contain",
-                        width: 20,
-                        marginRight: 5,
-                      }}
-                    />
-                    {r?.value}
-                  </Button>
-                </Tooltip>
-              ))}
-            </ButtonGroup>
+            <Statistics />
           </div>
         </div>
+        <br />
+        {/* list of projects */}
+        {ProjectsList?.map((r, i) => (
+          <Card key={i} className="shadow-sm mb-4" style={{ borderRadius: 8 }}>
+            <Card.Body>
+              <Badge badgeContent={r?.type} color="primary">
+                <div className="row">
+                  <div className="col-12 col-md-4">
+                    <img
+                      src={r?.image}
+                      style={{
+                        borderRadius: 8,
+                        objectFit: "contain",
+                        width: "100%",
+                      }}
+                    />
+                  </div>
+                  <div className="col-12 col-md-8">
+                    <p className="h3">{r?.title}</p>
+                    <hr />
+                    <p className="text-justify mb-0">{r?.desc}</p>
+                    <a
+                      href="#"
+                      className="my-1"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <small>View More</small>
+                    </a>
+                    <div className="mt-3">
+                      {r?.stack?.map((s, j) => (
+                        <Chip
+                          key={j}
+                          avatar={<Avatar src={s?.icon} />}
+                          label={s?.value}
+                          size="small"
+                          // color="success"
+                          className="me-2"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Badge>
+            </Card.Body>
+          </Card>
+        ))}
       </Container>
     </div>
   );
