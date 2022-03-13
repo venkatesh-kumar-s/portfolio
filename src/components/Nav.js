@@ -1,7 +1,7 @@
 import React from "react";
 
 //Bootstrap Components
-import { Container, Navbar, NavbarBrand } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
@@ -41,6 +41,7 @@ const Nav = () => {
                 <img
                   src={r?.icon}
                   style={{ objectFit: "contain", width: 20, marginRight: 5 }}
+                  alt={r?.label}
                 />
                 {r?.label}
               </Link>

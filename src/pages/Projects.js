@@ -1,13 +1,7 @@
-import {
-  Avatar,
-  Badge,
-  Button,
-  ButtonGroup,
-  Chip,
-  Tooltip,
-} from "@mui/material";
+import { Avatar, Badge, Chip } from "@mui/material";
 import React from "react";
-import { Card, Container, Table } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useTitle } from "../components/customHooks/title";
 import Search from "../components/Search";
 import Statistics from "../components/Statistics";
@@ -44,6 +38,7 @@ const Projects = () => {
                   <div className="col-12 col-md-4">
                     <img
                       src={r?.image}
+                      alt={r?.title}
                       style={{
                         borderRadius: 8,
                         objectFit: "contain",
@@ -55,13 +50,13 @@ const Projects = () => {
                     <p className="h3">{r?.title}</p>
                     <hr />
                     <p className="text-justify mb-0">{r?.desc}</p>
-                    <a
-                      href="#"
+                    <Link
+                      to="/projects"
                       className="my-1"
                       style={{ textDecoration: "none" }}
                     >
                       <small>View More</small>
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       {r?.stack?.map((s, j) => (
                         <Chip
