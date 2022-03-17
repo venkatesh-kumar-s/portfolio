@@ -102,7 +102,7 @@ const Projects = () => {
                     }}
                   />
                 </div>
-                <div className="col-12 col-md-8">
+                <div className="col-12 col-md-8 mt-3 mt-md-0">
                   <p className="h3">{r?.title + " - " + r?.captions}</p>
                   <hr />
                   <p className="text-justify mb-0">{r?.description}</p>
