@@ -25,15 +25,18 @@ import { PROJECTS_LIST } from "../gql/queries";
 
 //css & styles
 import "../components/components.css";
+import Loading from "../components/Loading";
 
 const Projects = () => {
   useTitle("Projects");
   const navigate = useNavigate();
   const { data, loading, refetch, error } = useQuery(PROJECTS_LIST);
-
+  if (loading) {
+    return <Loading />;
+  }
   return (
-    <div className="d-flex justify-content-center my-2 mt-5">
-      <Container className="mt-3 mt-md-4">
+    <div className="d-flex justify-content-center my-2 mt-4">
+      <Container className="mt-3 mt-md-0">
         <div className="my-4 row">
           {/* search bar */}
           <div className="col-12 col-md-4">

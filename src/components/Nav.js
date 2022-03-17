@@ -19,7 +19,7 @@ const Nav = () => {
       bg="dark"
       expand="lg"
       variant="dark"
-      fixed="top"
+      //fixed="top"
       className="shadow"
     >
       <Container fluid className="row mx-sm-0">
