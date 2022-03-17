@@ -8,7 +8,7 @@ const FallBack = () => {
   return (
     <div
       className="bg-info d-flex justify-content-center align-items-center"
-      style={{ height: "90vh" }}
+      style={{ height: "95vh" }}
     >
       <div>
         <div className="row">

@@ -7,6 +7,7 @@ const Blogs = React.lazy(() => import("../pages/Blogs"));
 const Education = React.lazy(() => import("../pages/Education"));
 const Career = React.lazy(() => import("../pages/Career"));
 const FallBack = React.lazy(() => import("../components/FallBack"));
+const ProjectsDesc = React.lazy(() => import("../components/ProjectsDesc"));
 
 export const AppRoutes = [
   {
@@ -20,6 +21,10 @@ export const AppRoutes = [
   {
     path: "/projects",
     component: <Projects />,
+  },
+  {
+    path: "/projects/:id",
+    component: <ProjectsDesc />,
   },
   {
     path: "/blogs",
