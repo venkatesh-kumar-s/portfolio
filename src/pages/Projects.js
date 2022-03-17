@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
 import { Avatar, Chip } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Card, Container, Badge } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useTitle } from "../components/customHooks/title";
@@ -30,17 +30,27 @@ import Loading from "../components/Loading";
 const Projects = () => {
   useTitle("Projects");
   const navigate = useNavigate();
-  const { data, loading, refetch, error } = useQuery(PROJECTS_LIST);
+  const [search, setSearch] = useState("");
+  const { data, loading, refetch, error } = useQuery(PROJECTS_LIST, {
+    variables: { search: `%${search}%` },
+  });
   if (loading) {
     return <Loading />;
   }
   return (
-    <div className="d-flex justify-content-center my-2 mt-4">
+    <div
+      className="d-flex justify-content-center my-2 mt-4"
+      style={{ minHeight: "90vh" }}
+    >
       <Container className="mt-3 mt-md-0">
         <div className="my-4 row">
           {/* search bar */}
           <div className="col-12 col-md-4">
-            <Search placeholder="Search using project name, type, domain ..." />
+            <Search
+              placeholder="Search using project name, type, domain ..."
+              search={search}
+              setSearch={setSearch}
+            />
           </div>
 
           {/* projects count */}

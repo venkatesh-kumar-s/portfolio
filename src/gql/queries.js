@@ -1,8 +1,13 @@
 import { gql } from "@apollo/client";
 
 export const PROJECTS_LIST = gql`
-  query Projects {
-    projects(order_by: { created_at: asc }) {
+  query Projects($search: String = "%%") {
+    projects(
+      order_by: { created_at: asc }
+      where: {
+        _or: [{ captions: { _ilike: $search } }, { title: { _ilike: $search } }]
+      }
+    ) {
       id
       captions
       description
