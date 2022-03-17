@@ -5,33 +5,43 @@ import "./components.css";
 
 const Loading = () => {
   return (
-    <div>
+    <div className="d-flex flex-column">
       <LinearProgress
         color="primary"
         className="shadow"
-        sx={{ height: "3px" }}
+        sx={{ height: "3px", zIndex: 1000 }}
       />
       <div
+        className="w-100"
         style={{
-          display: "grid",
-          placeContent: "center",
-          height: "90vh",
-          position: "relative",
+          position: "absolute",
+          top: "50%",
+          transform: "translateY(-50%)",
         }}
       >
-        <div className="loader"></div>
-        <img
-          src={shiva}
+        <div
+          className="my-auto"
           style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            objectFit: "contain",
-            width: 70,
-            borderRadius: "100%",
-            transform: "translate(-50%,-50%)",
+            display: "grid",
+            //height: "100%",
+            placeContent: "center",
+            position: "relative",
           }}
-        />
+        >
+          <div className="loader"></div>
+          <img
+            src={shiva}
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              objectFit: "contain",
+              width: 70,
+              borderRadius: "100%",
+              transform: "translate(-50%,-50%)",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

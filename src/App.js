@@ -29,7 +29,7 @@ function App() {
   const [client] = useState(createApolloClient());
   return (
     <ApolloProvider client={client}>
-      <div className="App bg-info">
+      <div className="App">
         <Router>
           <Nav />
           <React.Suspense fallback={<Loading />}>
@@ -40,8 +40,9 @@ function App() {
             </Routes>
           </React.Suspense>
         </Router>
-        <Footer />
       </div>
+
+      <Footer />
     </ApolloProvider>
   );
 }

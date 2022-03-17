@@ -6,10 +6,7 @@ import Search from "../components/Search";
 const Blogs = () => {
   useTitle("Blogs");
   return (
-    <div
-      className="d-flex justify-content-center my-2"
-      style={{ height: "90vh" }}
-    >
+    <div className="d-flex justify-content-center">
       <Container>
         <div className="my-4 row">
           <div className="col-12 col-md-4">

@@ -1,7 +1,14 @@
 .App {
   scroll-behavior: smooth;
-  background-color: lightblue;
-  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    black,
+    #0099cc,
+    #33b5e5,
+    #9adcff,
+    white
+  );
+  min-height: 93vh;
   overflow-x: hidden;
 }
 
