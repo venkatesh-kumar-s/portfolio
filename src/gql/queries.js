@@ -21,3 +21,25 @@ export const PROJECTS_LIST = gql`
     }
   }
 `;
+
+export const BLOGS_LIST = gql`
+  query Blogs($search: String = "") {
+    blogs(
+      order_by: { created_at: desc }
+      where: {
+        _or: [{ title: { _ilike: $search } }, { type: { _ilike: $search } }]
+      }
+    ) {
+      banners
+      captions
+      conslusion
+      content
+      created_at
+      id
+      introduction
+      thumbnail
+      title
+      type
+    }
+  }
+`;

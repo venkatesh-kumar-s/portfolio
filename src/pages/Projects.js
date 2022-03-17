@@ -38,7 +38,7 @@ const Projects = () => {
     return <Loading />;
   }
   return (
-    <div className="d-flex justify-content-center mt-2 mt-4">
+    <div className="d-flex justify-content-center mt-4">
       <Container className="mt-3 mt-md-0">
         <div className="my-4 row">
           {/* search bar */}

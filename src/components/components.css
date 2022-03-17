@@ -48,3 +48,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* .blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 20px;
+} */
