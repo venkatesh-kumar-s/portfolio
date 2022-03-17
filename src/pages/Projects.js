@@ -150,7 +150,8 @@ const Projects = () => {
         ))}
         <hr />
         <p className="text-center">
-          &copy; All Corporate projects are subjected to client's copyrights.
+          &copy; All Corporate projects are subjected to respective client's
+          copyrights.
         </p>
       </Container>
     </div>

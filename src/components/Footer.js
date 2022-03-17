@@ -10,7 +10,9 @@ const Footer = () => {
   const year = moment().format("YYYY");
   return (
     <div className="d-flex justify-content-between footer shadow w-100">
-      <Container fluid>&copy;{year} - Venkatesh Kumar</Container>
+      <Container fluid>
+        &copy; {year} {year !== "2022" && "- " + year} Venkatesh Kumar
+      </Container>
       <Social />
     </div>
   );
