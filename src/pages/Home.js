@@ -19,7 +19,8 @@ const Home = () => {
       <div data-aos="fade-up" className="section"></div>
       <div data-aos="fade-up" className="section"></div>
       <div data-aos="fade-up" className="section"></div>
-      <div className="section"></div>
+      <div data-aos="fade-up" className="section"></div>
+      <div data-aos="zoom-in" className="section"></div>
     </div>
   );
 };
