@@ -14,7 +14,7 @@ const Introduction = () => {
           <Avatar
             src={dp}
             alt="venkatesh kumar"
-            className="mt-5"
+            className="mt-3"
             sx={{ width: 250, height: 250, margin: "auto" }}
           />
         </div>
