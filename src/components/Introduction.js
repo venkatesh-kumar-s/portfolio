@@ -39,14 +39,19 @@ const Introduction = () => {
               </div>
             ))}
 
-            <p className="mt-4">
-              A Passionate Software Developer, currently focused on frontend
-              development with use of cutting edge industry level technologies
-              like React.js with React Hooks, React Router V6, GraphQL, Redux
-              and also well versed with CSS in JS concepts and external css
-              frameworks and libraries like Material UI, Bootstrap, Tailwind
-              CSS.
-            </p>
+            <div
+              className="mt-4 p-2"
+              style={{ backgroundColor: "#ffffff20", borderRadius: 10 }}
+            >
+              <p className="text-justify my-auto mx-1">
+                A Passionate Software Developer, currently focused on frontend
+                development with use of cutting edge industry level technologies
+                like React.js with React Hooks, React Router V6, GraphQL, Redux
+                and also well versed with CSS in JS concepts and external css
+                frameworks and libraries like Material UI, Bootstrap, Tailwind
+                CSS.
+              </p>
+            </div>
           </div>
         </div>
       </div>
