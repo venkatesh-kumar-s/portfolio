@@ -16,9 +16,10 @@ const Home = () => {
     <div className="mt-4">
       <div className="section"></div>
       <div data-aos="fade-up" className="section"></div>
-
-      <div data-aos="fade-right" className="section"></div>
-      <div data-aos="fade-left" className="section"></div>
+      <div data-aos="fade-up" className="section"></div>
+      <div data-aos="fade-up" className="section"></div>
+      <div data-aos="fade-up" className="section"></div>
+      <div className="section"></div>
     </div>
   );
 };
