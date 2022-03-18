@@ -8,7 +8,7 @@ import { Intro } from "../data/introduction";
 
 const Introduction = () => {
   return (
-    <Container className="mt-4 h-100">
+    <Container className="mt-4 mt-md-0 h-100">
       <div className="row h-100 text-light">
         <div className="col-md-6 col-sm-12 my-auto">
           <Avatar

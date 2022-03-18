@@ -1,12 +1,5 @@
 import React from "react";
 import "../components/components.css";
-
-//icons
-import education from "../assets/images/icons/education.ico";
-import blogs from "../assets/images/icons/blogs.ico";
-import career from "../assets/images/icons/career.ico";
-import about from "../assets/images/icons/about.ico";
-import projects from "../assets/images/icons/projects.ico";
 import { LandingStats } from "../data/menu";
 
 const LandingStatistics = () => {
