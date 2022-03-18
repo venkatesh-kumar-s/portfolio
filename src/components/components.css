@@ -88,3 +88,8 @@
     width: 95vw;
   }
 }
+
+.ext-link {
+  text-decoration: none;
+  color: yellowgreen;
+}

@@ -46,10 +46,60 @@ const Introduction = () => {
               <p className="text-justify my-auto mx-1">
                 A Passionate Software Developer, currently focused on frontend
                 development with use of cutting edge industry level technologies
-                like React.js with React Hooks, React Router V6, GraphQL, Redux
+                like{" "}
+                <a
+                  href="https://reactjs.org/"
+                  className="ext-link"
+                  target="_blank"
+                >
+                  React.js
+                </a>{" "}
+                with React Hooks,{" "}
+                <a
+                  href="https://reactrouter.com/"
+                  className="ext-link"
+                  target="_blank"
+                >
+                  React Router V6
+                </a>
+                ,{" "}
+                <a
+                  href="https://graphql.org/"
+                  className="ext-link"
+                  target="_blank"
+                >
+                  GraphQL
+                </a>
+                ,{" "}
+                <a
+                  href="https://redux.js.org/"
+                  className="ext-link"
+                  target="_blank"
+                >
+                  Redux
+                </a>{" "}
                 and also well versed with CSS in JS concepts and external css
-                frameworks and libraries like Material UI, Bootstrap, Tailwind
-                CSS.
+                frameworks and libraries like{" "}
+                <a href="https://mui.com/" className="ext-link" target="_blank">
+                  Material UI
+                </a>
+                ,{" "}
+                <a
+                  href="https://getbootstrap.com/"
+                  className="ext-link"
+                  target="_blank"
+                >
+                  Bootstrap
+                </a>
+                ,{" "}
+                <a
+                  href="https://tailwindcss.com/"
+                  className="ext-link"
+                  target="_blank"
+                >
+                  Tailwind CSS
+                </a>
+                .
               </p>
             </div>
           </div>
