@@ -11,6 +11,7 @@ import {
   InMemoryCache,
   HttpLink,
 } from "@apollo/client";
+import ScrollToTop from "./components/ScrollToTop";
 
 const createApolloClient = () => {
   return new ApolloClient({
@@ -27,6 +28,7 @@ const createApolloClient = () => {
 
 function App() {
   const [client] = useState(createApolloClient());
+
   return (
     <ApolloProvider client={client}>
       <div className="App">
@@ -41,7 +43,7 @@ function App() {
           </React.Suspense>
         </Router>
       </div>
-
+      <ScrollToTop />
       <Footer />
     </ApolloProvider>
   );
