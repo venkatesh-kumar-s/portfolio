@@ -49,8 +49,10 @@
   }
 }
 
-/* .blogs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px 20px;
-} */
+.section {
+  height: 80vh;
+  background-color: yellowgreen;
+  margin: 30px 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}

@@ -1,30 +1,25 @@
 import { Avatar } from "@mui/material";
-import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import dp from "../assets/images/profilepic.jpg";
+import "../components/components.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+    });
+  });
   return (
-    <Container>
-      <div className="row" style={{ height: "max-content" }}>
-        <div className="col-12 col-md-4 pt-4">
-          <Avatar
-            src={dp}
-            alt="venkatesh kumar"
-            className="shadow"
-            sx={{
-              height: 200,
-              width: 200,
-            }}
-          />
-        </div>
-        <div className="col-12 col-md-8">
-          <p color="#FFA500" className="display-4">
-            Venkatesh Kumar
-          </p>
-        </div>
-      </div>
-    </Container>
+    <div className="mt-4">
+      <div className="section"></div>
+      <div data-aos="fade-up" className="section"></div>
+
+      <div data-aos="fade-right" className="section"></div>
+      <div data-aos="fade-left" className="section"></div>
+    </div>
   );
 };
 
