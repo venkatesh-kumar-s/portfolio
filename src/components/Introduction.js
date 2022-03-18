@@ -1,10 +1,10 @@
 import { Avatar } from "@mui/material";
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Intro } from "../data/introduction";
 
 //assets
 import dp from "../assets/images/profilepic.jpg";
-import { Intro } from "../data/introduction";
 
 const Introduction = () => {
   return (
