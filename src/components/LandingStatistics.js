@@ -19,7 +19,7 @@ const LandingStatistics = () => {
         <div
           key={i}
           className="col-md-3 col-sm-12 shadow"
-          style={{ backgroundColor: "#cdb4db" }}
+          style={{ backgroundColor: r?.tone }}
         >
           <p className="bold">{r?.value}</p>
           <p>

@@ -37,20 +37,24 @@ export const LandingStats = [
     icon: projects,
     label: "Projects",
     value: 6,
+    tone: "#cdb4db",
   },
   {
     icon: blogs,
     label: "Blogs",
     value: 8,
+    tone: "#ffc8dd",
   },
   {
     icon: education,
     label: "Education",
     value: 16,
+    tone: "#bde0fe",
   },
   {
     icon: career,
     label: "Experience",
     value: 3.2,
+    tone: "#a2d2ff",
   },
 ];
