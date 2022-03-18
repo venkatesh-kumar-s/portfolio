@@ -20,7 +20,7 @@ const Home = () => {
       <div data-aos="fade-up" className="section"></div>
       <div data-aos="fade-up" className="section"></div>
       <div data-aos="fade-up" className="section"></div>
-      <div data-aos="fade-down" className="section"></div>
+      <div data-aos="fade-right" className="section"></div>
     </div>
   );
 };
