@@ -20,7 +20,7 @@ const Nav = () => {
       expand="lg"
       variant="dark"
       //fixed="top"
-      className="shadow"
+      className="shadow bg-black"
     >
       <Container fluid className="row mx-sm-0">
         <Link to="/" className="navbar-brand col">
