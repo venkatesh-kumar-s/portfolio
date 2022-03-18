@@ -3,7 +3,10 @@ import "../components/components.css";
 
 const LandingStatistics = () => {
   return (
-    <div className="row m-auto w-100 text-center">
+    <div
+      className="row m-auto w-100 text-center"
+      style={{ fontWeight: "bold", fontSize: "large" }}
+    >
       <div
         className="col-md-3 col-sm-12 shadow"
         style={{ backgroundColor: "#cdb4db" }}
