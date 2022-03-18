@@ -3,8 +3,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
-import dp from "../assets/images/profilepic.jpg";
+
 import "../components/components.css";
+import Introduction from "../components/Introduction";
 import LandingStatistics from "../components/LandingStatistics";
 
 const Home = () => {
@@ -14,10 +15,11 @@ const Home = () => {
     });
   });
   return (
-    <div className="mt-4">
+    <div className="">
       <div className="section"></div>
-      <div data-aos="fade-up" className="questions-section"></div>
-      <div data-aos="fade-up" className="questions-section"></div>
+      <div data-aos="fade-up" className="main-section">
+        <Introduction />
+      </div>
       <div data-aos="fade-up" className="statistics-section m-auto d-flex">
         <LandingStatistics />
       </div>

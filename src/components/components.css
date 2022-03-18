@@ -49,6 +49,11 @@
   }
 }
 
+.main-section {
+  height: 80vh;
+  margin: 0 0 40px 0;
+}
+
 .statistics-section {
   margin: 30px 10px;
   border-radius: 10px;
@@ -58,7 +63,7 @@
 }
 
 .questions-section {
-  height: 50vh;
+  height: 30vh;
   background-color: yellowgreen;
   margin: 30px 10px;
   border-radius: 10px;
@@ -72,6 +77,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .main-section {
+    height: max-content;
+  }
+  .content {
+    margin: 10px;
+  }
   .statistics-section {
     margin: 30px 10px;
     width: 95vw;
