@@ -31,3 +31,26 @@ export const Menu = [
     icon: career,
   },
 ];
+
+export const LandingStats = [
+  {
+    icon: projects,
+    label: "Projects",
+    value: 6,
+  },
+  {
+    icon: blogs,
+    label: "Blogs",
+    value: 8,
+  },
+  {
+    icon: education,
+    label: "Education",
+    value: 16,
+  },
+  {
+    icon: career,
+    label: "Experience",
+    value: 3.2,
+  },
+];

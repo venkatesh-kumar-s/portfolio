@@ -1,40 +1,38 @@
 import React from "react";
 import "../components/components.css";
 
+//icons
+import education from "../assets/images/icons/education.ico";
+import blogs from "../assets/images/icons/blogs.ico";
+import career from "../assets/images/icons/career.ico";
+import about from "../assets/images/icons/about.ico";
+import projects from "../assets/images/icons/projects.ico";
+import { LandingStats } from "../data/menu";
+
 const LandingStatistics = () => {
   return (
     <div
       className="row m-auto w-100 text-center"
       style={{ fontWeight: "bold", fontSize: "large" }}
     >
-      <div
-        className="col-md-3 col-sm-12 shadow"
-        style={{ backgroundColor: "#cdb4db" }}
-      >
-        <p className="bold">6</p>
-        <p>Projects</p>
-      </div>
-      <div
-        className="col-md-3 col-sm-12 shadow"
-        style={{ backgroundColor: "#ffc8dd" }}
-      >
-        <p className="bold">8</p>
-        <p>Blogs</p>
-      </div>
-      <div
-        className="col-md-3 col-sm-12 shadow"
-        style={{ backgroundColor: "#bde0fe" }}
-      >
-        <p className="bold">16</p>
-        <p>Education</p>
-      </div>
-      <div
-        className="col-md-3 col-sm-12 shadow"
-        style={{ backgroundColor: "#a2d2ff" }}
-      >
-        <p className="bold">3.2</p>
-        <p>Experience</p>
-      </div>
+      {LandingStats?.map((r, i) => (
+        <div
+          key={i}
+          className="col-md-3 col-sm-12 shadow"
+          style={{ backgroundColor: "#cdb4db" }}
+        >
+          <p className="bold">{r?.value}</p>
+          <p>
+            <img
+              src={r?.icon}
+              alt="projects"
+              style={{ objectFit: "contain", width: 25 }}
+            />
+            &nbsp;
+            {r?.label}
+          </p>
+        </div>
+      ))}
     </div>
   );
 };
