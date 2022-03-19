@@ -50,11 +50,13 @@ export const LandingStats = [
     label: "Education",
     value: 16,
     tone: "#bde0fe",
+    hasYear: true,
   },
   {
     icon: career,
     label: "Experience",
     value: 3.2,
     tone: "#a2d2ff",
+    hasYear: true,
   },
 ];

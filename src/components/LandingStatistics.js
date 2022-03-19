@@ -14,7 +14,13 @@ const LandingStatistics = () => {
           className="col-md-3 col-sm-12 shadow"
           style={{ backgroundColor: r?.tone }}
         >
-          <p className="bold">{r?.value}</p>
+          <p className="bold">
+            {r?.value}
+            {r?.hasYear && (
+              <sub style={{ fontSize: 20, margin: "10px" }}>Yrs</sub>
+            )}
+          </p>
+
           <p>
             <img
               src={r?.icon}
