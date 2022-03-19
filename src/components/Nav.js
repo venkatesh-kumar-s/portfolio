@@ -16,7 +16,6 @@ const Nav = () => {
   const [state, setState] = useState(false);
   return (
     <Navbar
-      collapseOnSelect
       bg="dark"
       expand="lg"
       expanded={state}
