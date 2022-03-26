@@ -14,7 +14,7 @@ const Skills = () => {
     <>
       {!loading ? (
         <div
-          className="card bg-info mx-3 my-4 m-md-0 shadow"
+          className="card bg-dark mx-3 my-4 m-md-0 shadow"
           style={{ borderRadius: 10 }}
         >
           <div className="card-header">
@@ -23,7 +23,7 @@ const Skills = () => {
           <div className="card-body row" style={{ background: "#0099cc80" }}>
             {data?.skills?.map((r, i) => (
               <div key={i} className="col-sm-12 col-md-5 mx-auto">
-                <table className="table table-borderless">
+                <table className="table table-borderless my-0">
                   <tbody>
                     <tr>
                       <td>
