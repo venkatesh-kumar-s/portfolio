@@ -76,20 +76,30 @@
   margin: 0;
 }
 
+.ext-link {
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.skills-rating {
+  width: 75%;
+}
+
 @media only screen and (max-width: 768px) {
   .main-section {
     height: max-content;
   }
+
   .content {
     margin: 10px;
   }
+
   .statistics-section {
     margin: 30px 10px;
     width: 90vw;
   }
-}
 
-.ext-link {
-  text-decoration: none;
-  color: yellowgreen;
+  .skills-rating {
+    width: 100%;
+  }
 }
