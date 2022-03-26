@@ -25,7 +25,6 @@ const Home = () => {
         <LandingStatistics />
       </div>
       <div data-aos="fade-up" className="mx-auto my-5 skills-rating">
-        <p className="text-light h1">Skills</p>
         <Skills />
       </div>
       <Container>

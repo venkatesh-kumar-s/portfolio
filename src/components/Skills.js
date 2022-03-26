@@ -12,30 +12,38 @@ const Skills = () => {
 
   return (
     <>
-      {loading ? (
-        <div className="row">
-          {data?.skills?.map((r, i) => (
-            <div key={i} className="col-sm-12 col-md-5 mx-auto">
-              <table className="table table-borderless">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h5 className="text-light">{r?.title}</h5>
-                    </td>
-                    <td className="float-end">
-                      <Rating
-                        key={i}
-                        value={r?.rating}
-                        size="large"
-                        precision={0.5}
-                        readOnly
-                      />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          ))}
+      {!loading ? (
+        <div
+          className="card bg-info mx-3 my-4 m-md-0 shadow"
+          style={{ borderRadius: 10 }}
+        >
+          <div className="card-header">
+            <p className="h1 text-light">Skills</p>
+          </div>
+          <div className="card-body row" style={{ background: "#0099cc80" }}>
+            {data?.skills?.map((r, i) => (
+              <div key={i} className="col-sm-12 col-md-5 mx-auto">
+                <table className="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h5 className="text-light">{r?.title}</h5>
+                      </td>
+                      <td className="float-end">
+                        <Rating
+                          key={i}
+                          value={r?.rating}
+                          size="large"
+                          precision={0.5}
+                          readOnly
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <SkeletonTheme
