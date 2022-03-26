@@ -33,6 +33,7 @@ const Skills = () => {
                       <td>
                         <h5 className="text-light d-flex">
                           <Avatar
+                            variant="square"
                             src={SkillsList?.filter((f) => f?.icon === r?.icon)
                               ?.map((l) => l?.image)
                               ?.toString()}
