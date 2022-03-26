@@ -50,6 +50,7 @@ export const SKILLS_LIST = gql`
       id
       rating
       title
+      icon
     }
   }
 `;

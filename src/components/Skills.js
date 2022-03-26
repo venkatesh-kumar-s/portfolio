@@ -5,7 +5,8 @@ import { SKILLS_LIST } from "../gql/queries";
 //loading skeleton
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { Rating } from "@mui/material";
+import { Avatar, Rating } from "@mui/material";
+import { SkillsList } from "../data/stack";
 
 const Skills = () => {
   const { data, loading } = useQuery(SKILLS_LIST);
@@ -27,7 +28,15 @@ const Skills = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <h5 className="text-light">{r?.title}</h5>
+                        <h5 className="text-light d-flex">
+                          <Avatar
+                            src={SkillsList?.filter((f) => f?.icon === r?.icon)
+                              ?.map((l) => l?.image)
+                              ?.toString()}
+                            sx={{ height: 25, width: 25, marginRight: 1 }}
+                          />
+                          {r?.title}
+                        </h5>
                       </td>
                       <td className="float-end">
                         <Rating
