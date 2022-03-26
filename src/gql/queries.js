@@ -43,3 +43,13 @@ export const BLOGS_LIST = gql`
     }
   }
 `;
+
+export const SKILLS_LIST = gql`
+  query Skills {
+    skills(order_by: { created_at: asc }) {
+      id
+      rating
+      title
+    }
+  }
+`;
