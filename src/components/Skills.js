@@ -18,10 +18,13 @@ const Skills = () => {
           className="card bg-dark mx-3 my-4 m-md-0 shadow"
           style={{ borderRadius: 10 }}
         >
-          <div className="card-header py-1">
-            <p className="h1 text-light">Skills</p>
+          <div className="card-header">
+            <p className="h1 text-light my-auto">Skills</p>
           </div>
-          <div className="card-body row" style={{ background: "#0099cc80" }}>
+          <div
+            className="card-body row px-0"
+            style={{ background: "#0099cc80" }}
+          >
             {data?.skills?.map((r, i) => (
               <div key={i} className="col-sm-12 col-md-5 mx-auto">
                 <table className="table table-borderless my-0">
