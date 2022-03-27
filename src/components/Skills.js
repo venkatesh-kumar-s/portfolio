@@ -59,14 +59,20 @@ const Skills = () => {
           </div>
         </div>
       ) : (
-        <SkeletonTheme
-          baseColor="#33b5e5"
-          highlightColor="white"
-          height="200px"
-          borderRadius={10}
-        >
-          <Skeleton />
-        </SkeletonTheme>
+        <>
+          <Skeleton
+            baseColor="#33b5e5"
+            highlightColor="white"
+            height="50px"
+            borderRadius={10}
+          />
+          <Skeleton
+            baseColor="#33b5e5"
+            highlightColor="white"
+            height="200px"
+            borderRadius={10}
+          />
+        </>
       )}
     </>
   );
