@@ -92,6 +92,7 @@
   border: 0px;
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .strengths {
@@ -100,7 +101,7 @@
   height: 100%;
   width: 100vw;
   color: whitesmoke;
-  background-color: #11111180;
+  background-color: rgb(15, 110, 129);
   clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 80%);
 }
 
@@ -108,7 +109,7 @@
   height: 100%;
   padding: 20px;
   color: black;
-  background-color: #9adcff;
+  /* background-color: #9adcff; */
   clip-path: polygon(0 100%, 100% 100%, 100% 20%, 0 80%);
 }
 @media only screen and (max-width: 768px) {
@@ -133,5 +134,6 @@
     height: 50vh;
     position: relative;
     border: 0px;
+    margin-bottom: 10px;
   }
 }
