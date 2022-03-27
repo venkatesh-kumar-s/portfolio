@@ -87,9 +87,11 @@
 }
 
 .strengths-weakness {
-  height: 60vh;
+  height: 70vh;
   position: relative;
   border: 0px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .strengths {
@@ -125,5 +127,11 @@
 
   .skills-rating {
     width: 100%;
+  }
+
+  .strengths-weakness {
+    height: 50vh;
+    position: relative;
+    border: 0px;
   }
 }
