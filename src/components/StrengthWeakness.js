@@ -16,7 +16,7 @@ const StrengthWeakness = () => {
             &nbsp; <span className="my-auto">Strengths . . . </span>
           </h1>
           <ul
-            className="mt-4 mt-md-4"
+            className="mt-4 mt-md-4 p-0 px-md-3"
             style={{ fontWeight: 500, listStyle: "none" }}
           >
             <li>- Hungry for upgrades</li>
