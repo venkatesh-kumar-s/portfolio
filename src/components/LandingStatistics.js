@@ -11,7 +11,7 @@ const LandingStatistics = () => {
       {LandingStats?.map((r, i) => (
         <div
           key={i}
-          className="col-md-3 col-sm-12 shadow"
+          className="col-md-3 col-6 shadow"
           style={{ backgroundColor: r?.tone }}
         >
           <p className="bold">
