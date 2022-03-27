@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import "../components/components.css";
 import Introduction from "../components/Introduction";
 import LandingStatistics from "../components/LandingStatistics";
+import Questions from "../components/Questions";
 import Skills from "../components/Skills";
 import StrengthWeakness from "../components/StrengthWeakness";
 
@@ -30,28 +31,10 @@ const Home = () => {
       </div>
 
       <Container>
-        <div data-aos="fade-up" className="questions-section">
-          where do you see yourself in 5 years
+        <div data-aos="fade-up" className="my-5">
+          <h1>Q & As</h1>
+          <Questions />
         </div>
-        <div data-aos="fade-right" className="questions-section">
-          what kind of work environment do you like most?
-        </div>
-        <div data-aos="fade-up" className="questions-section">
-          what is the professional experience you are most proud of?
-        </div>
-        <div data-aos="fade-right" className="questions-section">
-          what are you looking for in a new position?
-        </div>
-        <div data-aos="fade-up" className="questions-section">
-          strengths & weakness
-        </div>
-        <div data-aos="fade-right" className="questions-section">
-          How would you boos or coworkers describe you?
-        </div>
-        <div data-aos="fade-up" className="questions-section">
-          How would you deal with pressure or stressful situations?
-        </div>
-        <div className="questions-section">hbhjbh</div>
       </Container>
       <StrengthWeakness />
       <div></div>

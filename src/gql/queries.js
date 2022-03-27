@@ -54,3 +54,15 @@ export const SKILLS_LIST = gql`
     }
   }
 `;
+
+export const QUESTIONS_LIST = gql`
+  query Questions {
+    questions {
+      id
+      question
+      answer
+      created_at
+      updated_at
+    }
+  }
+`;
