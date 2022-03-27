@@ -37,7 +37,7 @@ const StrengthWeakness = () => {
             right: 20,
           }}
         >
-          <ul className="mb-5" style={{ fontWeight: 500 }}>
+          <ul className="mb-5" style={{ fontWeight: 500, listStyle: "none" }}>
             <li>Curiosity -</li>
             <li>Seek for perfection -</li>
             <li>Strings attached to trends -</li>
