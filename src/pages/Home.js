@@ -9,6 +9,9 @@ import Introduction from "../components/Introduction";
 import LandingStatistics from "../components/LandingStatistics";
 import Skills from "../components/Skills";
 
+import quoteRight from "../assets/images/quote-right.png";
+import quoteLeft from "../assets/images/quoteLeft.png";
+
 const Home = () => {
   useEffect(() => {
     Aos.init({
@@ -30,7 +33,10 @@ const Home = () => {
       <div data-aos="fade-up" className="strengths-weakness bg-info shadow">
         <div className="strengths">
           <Container fluid>
-            <h1>Strengths</h1>
+            <h1 className="d-flex">
+              <Avatar src={quoteLeft} sx={{ height: 60, width: 60 }} />
+              &nbsp; <span className="my-auto">Strengths . . . </span>
+            </h1>
             <ul className="my-5 my-md-4">
               <li>sedee</li>
               <li>sedee</li>
@@ -57,7 +63,10 @@ const Home = () => {
               <li>sedee</li>
               <li>sedee</li>
             </ul>
-            <h1>Weakness</h1>
+            <h1 className="d-flex float-end">
+              <span className="my-auto">. . . Weakness </span>&nbsp;{" "}
+              <Avatar src={quoteRight} sx={{ height: 60, width: 60 }} />
+            </h1>
           </Container>
         </div>
       </div>
