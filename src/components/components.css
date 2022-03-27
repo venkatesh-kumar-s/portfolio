@@ -136,14 +136,4 @@
     border: 0px;
     margin-bottom: 20px;
   }
-
-  .strengths {
-    position: absolute;
-    padding: 20px;
-    height: 100%;
-    width: 100vw;
-    color: whitesmoke;
-    background-color: rgb(15, 110, 129);
-    clip-path: polygon(0 0, 100% 0%, 100% 33%, 0 80%);
-  }
 }
