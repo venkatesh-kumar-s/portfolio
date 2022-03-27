@@ -86,6 +86,29 @@
   min-height: 200px;
 }
 
+.strengths-weakness {
+  height: 60vh;
+  position: relative;
+  border: 0px;
+}
+
+.strengths {
+  position: absolute;
+  padding: 20px;
+  height: 100%;
+  width: 100vw;
+  color: whitesmoke;
+  background-color: #11111180;
+  clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 80%);
+}
+
+.weakness {
+  height: 100%;
+  padding: 20px;
+  color: black;
+  background-color: #9adcff;
+  clip-path: polygon(0 100%, 100% 100%, 100% 20%, 0 80%);
+}
 @media only screen and (max-width: 768px) {
   .main-section {
     height: max-content;

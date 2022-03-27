@@ -2,7 +2,7 @@ import { Avatar } from "@mui/material";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import { Container, ProgressBar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import "../components/components.css";
 import Introduction from "../components/Introduction";
@@ -26,6 +26,40 @@ const Home = () => {
       </div>
       <div data-aos="fade-up" className="mx-auto my-5 skills-rating">
         <Skills />
+      </div>
+      <div data-aos="fade-up" className="strengths-weakness bg-info shadow">
+        <div className="strengths">
+          <Container fluid>
+            <h1>Strengths</h1>
+            <ul className="my-5 my-md-4">
+              <li>sedee</li>
+              <li>sedee</li>
+              <li>sedee</li>
+              <li>sedee</li>
+              <li>sedee</li>
+            </ul>
+          </Container>
+        </div>
+        <div className="weakness">
+          <Container
+            fluid
+            className="text-end"
+            style={{
+              position: "absolute",
+              bottom: 20,
+              right: 20,
+            }}
+          >
+            <ul className="my-5 my-md-4">
+              <li>sedee</li>
+              <li>sedee</li>
+              <li>sedee</li>
+              <li>sedee</li>
+              <li>sedee</li>
+            </ul>
+            <h1>Weakness</h1>
+          </Container>
+        </div>
       </div>
       <Container>
         <div data-aos="fade-up" className="questions-section">
