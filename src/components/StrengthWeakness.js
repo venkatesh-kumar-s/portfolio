@@ -23,7 +23,7 @@ const StrengthWeakness = () => {
             <li>- Able to work alone</li>
             <li>- Great Team Player</li>
             <li>- Confidence</li>
-            <li>- Creativity</li>
+            <li>- Creative</li>
           </ul>
         </Container>
       </div>

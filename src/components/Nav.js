@@ -24,7 +24,11 @@ const Nav = () => {
       className="shadow bg-black"
     >
       <Container fluid className="row mx-sm-0 ps-3 pe-1 px-md-4">
-        <Link to="/" className="navbar-brand col">
+        <Link
+          to="/"
+          className="navbar-brand col"
+          onClick={() => setState(false)}
+        >
           <span className="text-warning">V</span>enkatesh Kumar
         </Link>
 

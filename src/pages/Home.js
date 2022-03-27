@@ -32,7 +32,7 @@ const Home = () => {
 
       <Container>
         <div data-aos="fade-up" className="my-5">
-          <h1>Q & As</h1>
+          <h1>Q&As</h1>
           <Questions />
         </div>
       </Container>
