@@ -10,8 +10,10 @@ import {
   ApolloProvider,
   InMemoryCache,
   HttpLink,
+  useMutation,
 } from "@apollo/client";
 import ScrollToTop from "./components/ScrollToTop";
+import Visitor from "./components/Visitor";
 
 const createApolloClient = () => {
   return new ApolloClient({
@@ -32,6 +34,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
+        <Visitor />
         <Router>
           <Nav />
           <React.Suspense fallback={<Loading />}>

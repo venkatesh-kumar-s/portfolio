@@ -9,7 +9,7 @@ const Loading = () => {
       <LinearProgress
         color="primary"
         className="shadow"
-        sx={{ height: "3px", zIndex: 1000 }}
+        sx={{ height: "1px", zIndex: 1000 }}
       />
       <div
         className="w-100"
