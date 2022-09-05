@@ -18,7 +18,7 @@ const Home = () => {
     });
   });
   return (
-    <div className="">
+    <div>
       <div className="section"></div>
       <div data-aos="fade-up" className="main-section">
         <Introduction />

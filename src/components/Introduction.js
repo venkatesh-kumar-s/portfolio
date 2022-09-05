@@ -30,9 +30,10 @@ const Introduction = () => {
                 {/* <p className="col-3">{r?.type} :</p> */}
                 <div className="col d-flex">
                   <Avatar
+                    variant={r?.variant}
                     src={r?.icon}
                     alt={r?.value}
-                    sx={{ height: 20, width: 20, margin: 1 }}
+                    sx={{ height: 25, width: 25, margin: 1 }}
                   />
                   <p className="my-auto">{r?.value}</p>
                 </div>

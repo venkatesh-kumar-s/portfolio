@@ -88,13 +88,14 @@ const Projects = () => {
               </Badge>
               <div className="row">
                 <div
-                  className="col-12 col-md-4"
+                  className="col-12 col-md-4 my-auto"
                   style={{ cursor: "pointer" }}
                   onClick={() => navigate(`/projects/${r?.id}`)}
                 >
                   <img
                     src={r?.thumbnail}
                     alt={r?.title}
+                    className="shadow"
                     style={{
                       borderRadius: 8,
                       objectFit: "contain",
