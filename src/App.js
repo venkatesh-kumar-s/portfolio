@@ -47,7 +47,9 @@ function App() {
         </Router>
       </div>
       <ScrollToTop />
-      <Footer />
+      <Router>
+        <Footer />
+      </Router>
     </ApolloProvider>
   );
 }

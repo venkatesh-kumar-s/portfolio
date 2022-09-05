@@ -11,7 +11,15 @@ const Footer = () => {
   return (
     <div className="d-flex justify-content-between footer shadow w-100">
       <Container fluid>
-        &copy; {year} {year !== "2022" && "- " + year} Venkatesh Kumar
+        &copy; {year} {year !== "2022" && "- " + year}
+        {", "}
+        <a
+          href="/admin-panel"
+          className="text-secondary"
+          style={{ textDecoration: "none", fontWeight: 500 }}
+        >
+          Venkatesh Kumar
+        </a>
       </Container>
       <Social />
     </div>

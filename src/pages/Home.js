@@ -1,4 +1,3 @@
-import { Avatar } from "@mui/material";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";

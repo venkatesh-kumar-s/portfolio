@@ -9,6 +9,7 @@ const Career = React.lazy(() => import("../pages/Career"));
 const FallBack = React.lazy(() => import("../components/FallBack"));
 const ProjectsDesc = React.lazy(() => import("../components/ProjectsDesc"));
 const BlogsDesc = React.lazy(() => import("../components/BlogsDesc"));
+const AdminPanel = React.lazy(() => import("../pages/Admin"));
 
 export const AppRoutes = [
   {
@@ -42,6 +43,10 @@ export const AppRoutes = [
   {
     path: "/career",
     component: <Career />,
+  },
+  {
+    path: "/admin-panel",
+    component: <AdminPanel />,
   },
   {
     path: "*",
