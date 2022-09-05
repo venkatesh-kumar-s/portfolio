@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTitle } from "../components/customHooks/title";
 import Verification from "../components/Verification";
+import "../components/components.css";
 
 const pass = "8801110025";
 
@@ -21,7 +22,7 @@ const Admin = () => {
         >
           <input
             type="password"
-            className="form-control shadow w-25 text-center mx-auto"
+            className="form-control shadow admin-pass text-center mx-auto"
             onChange={(e) => setState(e.target.value)}
             placeholder="Admin Key"
             style={{ fontSize: "2rem", color: "#3a5a40" }}
