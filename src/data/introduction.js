@@ -1,10 +1,9 @@
 import lpu from "../assets/images/lpu.png";
-import ampcome from "../assets/images/ampcome.jpg";
-import career from "../assets/images/icons/career.ico";
+import designation from "../assets/images/designation.png";
 
 export const Intro = [
   {
-    icon: career,
+    icon: designation,
     value: "Lead Engineer",
     type: "Designation",
     variant: "square",
