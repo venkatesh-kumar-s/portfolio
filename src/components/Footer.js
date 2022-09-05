@@ -8,6 +8,7 @@ import Social from "./Social";
 
 const Footer = () => {
   const year = moment().format("YYYY");
+
   return (
     <div className="d-flex justify-content-between footer shadow w-100">
       <Container fluid>

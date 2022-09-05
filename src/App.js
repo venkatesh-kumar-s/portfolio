@@ -10,7 +10,6 @@ import {
   ApolloProvider,
   InMemoryCache,
   HttpLink,
-  useMutation,
 } from "@apollo/client";
 import ScrollToTop from "./components/ScrollToTop";
 import Visitor from "./components/Visitor";
@@ -47,9 +46,7 @@ function App() {
         </Router>
       </div>
       <ScrollToTop />
-      <Router>
-        <Footer />
-      </Router>
+      <Footer />
     </ApolloProvider>
   );
 }
