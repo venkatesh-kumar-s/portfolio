@@ -21,6 +21,7 @@ const Qna = () => {
           },
         })
       )
+      .then(() => setState())
       .catch((e) =>
         toast.error("Operation Failed!", {
           style: {
