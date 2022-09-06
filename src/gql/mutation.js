@@ -1,5 +1,6 @@
 import { gql } from "@apollo/client";
 
+// Mutation for site visits recording
 export const INSERT_SITE_VISIT = gql`
   mutation SiteVisits(
     $mac: String
@@ -22,6 +23,16 @@ export const INSERT_SITE_VISIT = gql`
       }
     ) {
       affected_rows
+    }
+  }
+`;
+
+// Mutation for insertion questions and answers.
+export const INSERT_QNAS = gql`
+  mutation InsertQnA($answer: String, $question: String) {
+    insert_questions_one(object: { answer: $answer, question: $question }) {
+      id
+      created_at
     }
   }
 `;

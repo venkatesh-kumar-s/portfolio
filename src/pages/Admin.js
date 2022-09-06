@@ -11,7 +11,7 @@ const Admin = () => {
 
   return (
     <div>
-      {state !== pass ? (
+      {state === pass ? (
         <div
           style={{
             width: "100vw",
