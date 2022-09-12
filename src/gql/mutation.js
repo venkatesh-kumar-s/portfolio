@@ -36,3 +36,29 @@ export const INSERT_QNAS = gql`
     }
   }
 `;
+
+// QnA Mutations
+
+export const UPDATE_QNA = gql`
+  mutation UpdateQna(
+    $id: uuid = ""
+    $answer: String = ""
+    $question: String = ""
+  ) {
+    update_questions_by_pk(
+      pk_columns: { id: $id }
+      _set: { answer: $answer, question: $question }
+    ) {
+      id
+      updated_at
+    }
+  }
+`;
+
+export const DELETE_QNA = gql`
+  mutation DeleteQna($id: uuid = "") {
+    delete_questions_by_pk(id: $id) {
+      id
+    }
+  }
+`;
