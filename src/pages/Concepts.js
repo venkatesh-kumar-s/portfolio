@@ -1,7 +1,7 @@
 import React from "react";
-import CutOutText from "../concepts/CutOutText";
-import ConceptTitle from "../ConceptTitle";
-import ImageReflection from "../concepts/ImageReflection";
+import CutOutText from "../components/concepts/CutOutText";
+import ConceptTitle from "../components/ConceptTitle";
+import ImageReflection from "../components/concepts/ImageReflection";
 
 const Concepts = () => {
   return (

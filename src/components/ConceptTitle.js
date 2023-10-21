@@ -2,7 +2,7 @@ import React from "react";
 
 const ConceptTitle = ({ title, content }) => {
   return (
-    <div className="row bg-dark text-light">
+    <div className="row bg-light text-dark">
       <p
         className="col-3 p-1 text-start px-5"
         style={{ margin: "auto" }}

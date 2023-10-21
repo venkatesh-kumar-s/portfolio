@@ -10,7 +10,7 @@ const FallBack = React.lazy(() => import("../components/FallBack"));
 const ProjectsDesc = React.lazy(() => import("../components/ProjectsDesc"));
 const BlogsDesc = React.lazy(() => import("../components/BlogsDesc"));
 const AdminPanel = React.lazy(() => import("../pages/Admin"));
-const Concepts = React.lazy(() => import("../components/AdminControls/Concepts"));
+const Concepts = React.lazy(() => import("../pages/Concepts"));
 
 export const AppRoutes = [
   {
