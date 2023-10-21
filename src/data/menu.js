@@ -3,6 +3,7 @@ import blogs from "../assets/images/icons/blogs.ico";
 import career from "../assets/images/icons/career.ico";
 import about from "../assets/images/icons/about.ico";
 import projects from "../assets/images/icons/projects.ico";
+import concepts from "../assets/images/icons/system.png";
 
 export const Menu = [
   {
@@ -14,6 +15,11 @@ export const Menu = [
     label: "Projects",
     path: "/projects",
     icon: projects,
+  },
+  {
+    label: "Concepts",
+    path: "/concepts",
+    icon: concepts,
   },
   {
     label: "Blogs",

@@ -10,6 +10,7 @@ const FallBack = React.lazy(() => import("../components/FallBack"));
 const ProjectsDesc = React.lazy(() => import("../components/ProjectsDesc"));
 const BlogsDesc = React.lazy(() => import("../components/BlogsDesc"));
 const AdminPanel = React.lazy(() => import("../pages/Admin"));
+const Concepts = React.lazy(() => import("../components/AdminControls/Concepts"));
 
 export const AppRoutes = [
   {
@@ -43,6 +44,10 @@ export const AppRoutes = [
   {
     path: "/career",
     component: <Career />,
+  },
+  {
+    path: "/concepts",
+    component: <Concepts />,
   },
   {
     path: "/admin-panel",

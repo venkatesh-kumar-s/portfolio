@@ -1,4 +1,3 @@
-import { useQuery } from "@apollo/client";
 import moment from "moment";
 import React, { useState } from "react";
 import { Badge, Card, Container } from "react-bootstrap";
@@ -6,18 +5,15 @@ import { Link } from "react-router-dom";
 import { useTitle } from "../components/customHooks/title";
 import Loading from "../components/Loading";
 import Search from "../components/Search";
-import { BLOGS_LIST } from "../gql/queries";
 
 const Blogs = () => {
   useTitle("Blogs");
   const [search, setSearch] = useState("");
-  const { data, refetch, loading, error } = useQuery(BLOGS_LIST, {
-    variables: { search: `%${search}%` },
-  });
+  const [data, setData] = useState([]);
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
   return (
     <div className="my-5">
       <Container>

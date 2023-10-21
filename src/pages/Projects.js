@@ -1,4 +1,3 @@
-import { useQuery } from "@apollo/client";
 import { Avatar, Chip } from "@mui/material";
 import React, { useState } from "react";
 import { Card, Container, Badge } from "react-bootstrap";
@@ -21,7 +20,6 @@ import css from "../assets/images/icons/stack/css.ico";
 
 //static data
 import { ProjectsList } from "../data/projects";
-import { PROJECTS_LIST } from "../gql/queries";
 
 //css & styles
 import "../components/components.css";
@@ -31,12 +29,10 @@ const Projects = () => {
   useTitle("Projects");
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
-  const { data, loading, refetch, error } = useQuery(PROJECTS_LIST, {
-    variables: { search: `%${search}%` },
-  });
-  if (loading) {
-    return <Loading />;
-  }
+  const [data, setData] = useState([]);
+  // if (loading) {
+  //   return <Loading />;
+  // }
   return (
     <div className="d-flex justify-content-center mt-4">
       <Container className="mt-3 mt-md-0">

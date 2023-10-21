@@ -1,6 +1,4 @@
-import { useQuery } from "@apollo/client";
-import React from "react";
-import { SKILLS_LIST } from "../gql/queries";
+import React, { useState } from "react";
 
 //loading skeleton
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
@@ -9,7 +7,8 @@ import { Avatar, Rating } from "@mui/material";
 import { SkillsList } from "../data/stack";
 
 const Skills = () => {
-  const { data, loading } = useQuery(SKILLS_LIST);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   return (
     <>

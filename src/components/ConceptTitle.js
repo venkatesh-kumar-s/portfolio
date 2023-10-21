@@ -1,0 +1,23 @@
+import React from "react";
+
+const ConceptTitle = ({ title, content }) => {
+  return (
+    <div className="row bg-dark text-light">
+      <p
+        className="col-3 p-1 text-start px-5"
+        style={{ margin: "auto" }}
+      >
+        {title}
+      </p>
+      <p
+        className="col-9 p-1 text-end px-5"
+        style={{ margin: "auto" }}
+      >
+        {content}
+      </p>
+      {/* <marquee className="col-10">{content}</marquee> */}
+    </div>
+  );
+};
+
+export default ConceptTitle;

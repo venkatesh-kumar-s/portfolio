@@ -5,33 +5,12 @@ import Footer from "./components/Footer";
 import { AppRoutes } from "./routes";
 import React, { useState } from "react";
 import Loading from "./components/Loading";
-import {
-  ApolloClient,
-  ApolloProvider,
-  InMemoryCache,
-  HttpLink,
-} from "@apollo/client";
 import ScrollToTop from "./components/ScrollToTop";
 import Visitor from "./components/Visitor";
 
-const createApolloClient = () => {
-  return new ApolloClient({
-    link: new HttpLink({
-      uri: "https://venkateshkumar.hasura.app/v1/graphql",
-      headers: {
-        "x-hasura-admin-secret":
-          "du8cuS0SRs6emXzWHZ1hyk2uMMFUl5Ys4tgcv8bgzIqwifUM4lvt9mljhmFIrIp9",
-      },
-    }),
-    cache: new InMemoryCache(),
-  });
-};
-
 function App() {
-  const [client] = useState(createApolloClient());
-
   return (
-    <ApolloProvider client={client}>
+    <>
       <div className="App">
         <Visitor />
         <Router>
@@ -47,7 +26,7 @@ function App() {
       </div>
       <ScrollToTop />
       <Footer />
-    </ApolloProvider>
+    </>
   );
 }
 

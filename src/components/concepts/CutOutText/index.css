@@ -1,0 +1,31 @@
+.background {
+    background-image: url('../../../assets/images/concepts/cot-out-text.gif');
+    background-color: black;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text{
+    position: absolute;
+    font-size: 12.02em;
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    z-index: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.cutout{
+    font-size: 12em;
+    transform: translate(-50%, -50%);
+    background-image: url('../../../assets/images/concepts/cot-out-text.gif');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+}
