@@ -46,7 +46,7 @@ const EducationSummary = ({ data }) => {
           </div>
         </div>
 
-        <div class="card text-center section files my-auto">
+        <div class="card text-center section files my-auto bg-light">
           <div class={`card-header`}>Documents</div>
           <div class="card-body p-0">
             <table className="table table-sm table-striped table-hover">
