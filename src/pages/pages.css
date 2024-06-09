@@ -1,4 +1,112 @@
-.education .date{
-    color: whitesmoke;
-    font-weight: bold;
+.education .date {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.education {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.education::-webkit-scrollbar {
+  display: none;
+}
+
+.edu-cont {
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.vignette {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(4, 4, 4, 0.5) 95%
+  );
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+}
+
+.banner {
+  /* object-fit: contain; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.icon {
+  position: absolute;
+  object-fit: contain;
+  top: 5%;
+  left: 5%;
+}
+
+.lpu-icon{
+  width: 12em;
+}
+.inter-icon{
+  width: 18em;
+}
+.jnv-icon{
+  width: 7em;
+}
+
+
+
+.section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1001;
+}
+
+.info{
+  width: 70%;
+}
+
+.files{
+  width: 25%;
+  height: fit-content;
+}
+
+.card-header{
+  border-radius: 13px 13px 0 0 !important;
+  margin: 0.5px !important;
+}
+
+.card-footer{
+  border-radius: 0 0 15px 15px !important;
+}
+
+.lpu-title{
+  background-color: #f38120;
+  color: black;
+}
+
+.inter-title{
+  background-color: #ff000b;
+  color: whitesmoke;
+}
+
+.jnv-title{
+  background-color: #0b047b;
+  color: #32a411;
+}
+.table td{
+  text-align: start !important;
+  padding-left: 1em;
+  margin: auto;
 }

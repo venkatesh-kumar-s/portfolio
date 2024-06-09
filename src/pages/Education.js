@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTitle } from "../components/customHooks/title";
 import {
   VerticalTimeline,
@@ -6,13 +6,21 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { EducationHistory } from "../data/education";
-import "./pages.css"
+import "./pages.css";
+
+import EducationSummary from "../components/EducationSummary";
 
 const Education = () => {
   useTitle("Education");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollTo(0, 200);
+    };
+  }, []);
   return (
     <div className="education">
-      <VerticalTimeline>
+      {/* <VerticalTimeline>
         {EducationHistory?.map((edu, idx) => (
           <VerticalTimelineElement
             key={idx}
@@ -56,7 +64,9 @@ const Education = () => {
             
           </VerticalTimelineElement>
         ))}
-      </VerticalTimeline>
+      </VerticalTimeline> */}
+    
+      {EducationHistory?.map((edu,idx)=><EducationSummary key={idx} data={edu}/>)}
     </div>
   );
 };
